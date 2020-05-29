@@ -105,13 +105,7 @@ function correctAnswer() {
 function gameOver(userValue, randomNumber) {
     $("#titleHeader").text("The test is over.");
 
-    if(numberOfDigits < 8) {
-        $("#infoHeader").text("You entered " + userValue + "." + " The correct answer was " + randomNumber + ". You made it to level " + numberOfDigits + ". Your memory is worse than the average human memory.");
-    } else if(numberOfDigits > 8) {
-        $("#infoHeader").text("You entered " + userValue + "." + " The correct answer was " + randomNumber + ". You made it to level " + numberOfDigits + ". Your memory is better than the average human memory.");
-    } else if(numberOfDigits == 8) {
-        $("#infoHeader").text("You entered " + userValue + "." + " The correct answer was " + randomNumber + ". You made it to level " + numberOfDigits + ". Your memory is equal to the average human memory.");
-    }
+    $("#infoHeader").text("You entered " + userValue + "." + " The correct answer was " + randomNumber + ". You made it to level " + numberOfDigits + ".");
 
     $("#resetButton").show();
     $("#answerBox").hide();
