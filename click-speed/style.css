@@ -1,5 +1,10 @@
-.clicker-button {
-    
+.clicker {
+    padding: 40%;
+}
+
+.click-box {
+    text-align: center;
+    margin-top: 5%;
 }
 
 #info {
@@ -8,12 +13,4 @@
 
 .noselect {
 	-webkit-user-select: none;
-}
-
-#record {
-	text-align: center;
-}
-
-#demo {
-    text-align: center;
 }
