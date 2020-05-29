@@ -17,6 +17,7 @@ function myTimer() {
 
 //Runs the click speed test.
 function runClickTest() {
+	// alert("D");
 	//Increment number of clicks.
 	count++;
 
@@ -49,7 +50,7 @@ function displayTime() {
 //Shows how much time is left.
 function showTime() {
 	countDown--;
-	document.getElementById("area").innerHTML = countDown;
+	document.getElementById("click-counter").innerHTML = countDown;
 }
 
 //Reset the click speed test.

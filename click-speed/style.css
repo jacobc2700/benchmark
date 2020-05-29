@@ -14,3 +14,7 @@
 .noselect {
 	-webkit-user-select: none;
 }
+
+.time-counter, .click-counter {
+    display: inline-block;
+}
