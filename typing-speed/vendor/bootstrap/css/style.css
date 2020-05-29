@@ -1,0 +1,25 @@
+#area {
+    width: 900px;
+    height: 200px;
+    resize: none;
+}
+
+.box {
+    margin-top: 5%;
+}
+
+#text {
+    line-height: 2;
+}
+
+/* body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+} */
+
+#new {
+    cursor: pointer;
+}
