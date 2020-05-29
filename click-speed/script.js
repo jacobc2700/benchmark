@@ -4,7 +4,11 @@ var count = 0;
 //Runs when the ten seconds is over.
 function myTimer() {
 	//Tell the user the click speed.
-	alert("You clicked " + count + " times in 10 seconds. Your click speed is " + count / 10 + " clicks per second.");
+	// alert("You clicked " + count + " times in 10 seconds. Your click speed is " + count / 10 + " clicks per second.");
+
+	document.getElementById("click-counter").style.display = 'none';
+	document.getElementById("time-counter").style.display = 'none';
+	document.getElementById("speed-display").innerHTML = 'Click speed: ' + (count / 10) + ' clicks per second'
 
 	//Stops the timer.
 	clearInterval(timeLeftTimer);
@@ -12,7 +16,7 @@ function myTimer() {
 	//Everything below helps reset the click speed test.
 	reset();
 	count = 0;
-	document.getElementByClassName("click-counter").innerHTML = "";
+	document.getElementById("click-counter").innerHTML = "Clicks: 0";
 }
 
 //Runs the click speed test.
@@ -25,13 +29,13 @@ function runClickTest() {
 	createTimer(count);
 
 	//Show number of clicks.
-	document.getElementsByClassName("click-counter").innerHTML = count;
+	document.getElementById("click-counter").innerHTML = "Clicks: " + count;
 }
 
 //Starts the ten second timer after the first click.
 function createTimer(num) {
 	if (num == 1) {
-		var testTimer = setTimeout(myTimer, 10000);
+		var clickTimer = setTimeout(myTimer, 10000);
 		displayTime();
 	}
 }
@@ -50,11 +54,12 @@ function displayTime() {
 //Shows how much time is left.
 function showTime() {
 	countDown--;
-	document.getElementById("click-counter").innerHTML = countDown;
+	document.getElementById("time-counter").innerHTML = "Time: " + countDown + " seconds";
 }
 
 //Reset the click speed test.
 function reset() {
 	countDown = 10;
-	document.getElementById("area").innerHTML = countDown;
+	document.getElementById("time-counter").innerHTML = "Time: " + countDown + " seconds";
+	// document.getElementById("click-counter").innerHTML = "Clicks: " + count;
 }

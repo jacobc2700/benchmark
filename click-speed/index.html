@@ -20,11 +20,13 @@
 	<div class="row click-box">
 		<div class="card col-lg-4" style="width: 18rem; margin: auto;">
 			<div class="card-body">
-				<h5 class="card-title">Click Speed Test</h5>
+				<h3 class="card-title">Click Speed Test</h3>
 				<p class="card-text">Begin clicking whenever.</p>
-				<p class="card-text time-counter">Time: 10</p>
-				<p class="card-text click-counter">Clicks: 0</p>
-				<button class="clicker btn btn-danger btn-lg" onclick="runClickTest()">Click me :)</button>
+				<p id="time-counter" class="card-text">Time: 10 seconds</p>
+				<p id="click-counter" class="card-text">Clicks: 0</p>
+				<p id="speed-display" class="card-text"></p>
+				<button class="clicker btn btn-danger btn-lg" onclick="runClickTest()">Click me</button>
+				<a href="#" onClick='window.location.reload()'>Click here to try again.</a>
 			</div>
 		</div>
 	</div>
