@@ -1,0 +1,19 @@
+.clicker-button {
+    
+}
+
+#info {
+	text-align: center;
+}
+
+.noselect {
+	-webkit-user-select: none;
+}
+
+#record {
+	text-align: center;
+}
+
+#demo {
+    text-align: center;
+}
