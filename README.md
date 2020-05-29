@@ -7,3 +7,6 @@ Website for benchmark projects.
 - Typing Speed
 - Reaction Speed
 - Number Memory
+
+### Tasks:
+- Dexterity score.
