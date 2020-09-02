@@ -1,12 +1,10 @@
-# benchmark-projects
+# Benchmark Projects
 
-Website for benchmark projects.
+Website for simple benchmark projects (click speed, typing speed, reaction time, number memory).
 
-### Projects:
-- Click Speed
-- Typing Speed
-- Reaction Speed
-- Number Memory
-
-### Tasks:
-- Dexterity score.
+### Technologies:
+- JavaScript.
+- Bootstrap.
+- jQuery.
+- HTML.
+- CSS.
