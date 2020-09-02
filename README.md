@@ -2,7 +2,7 @@
 
 Website for simple benchmark projects (click speed, typing speed, reaction time, number memory).
 
-Check out the website here: http://www.thehumboo.com/benchmark-projects/.
+Check out the demo here: http://www.thehumboo.com/benchmark-projects/.
 
 ### Technologies:
 - JavaScript.
